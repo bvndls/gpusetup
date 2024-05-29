@@ -24,7 +24,7 @@ echo "The name assigned to the worker is: $WORKER"
 tmux rename-window "$WORKER"
 
 REPO="https://github.com/Lolliedieb/lolMiner-releases/releases/latest"
-VER=$(curl -sIL "$REPO" | grep -i 'location:' | awk -F"/" '{ printf "%s", $NF }')
+VER=$(curl -sIL "$REPO" | grep -i 'location:' | awk -F"/" '{ print $NF }' | tr -d '\r')
 URL="https://github.com/Lolliedieb/lolMiner-releases/releases/download/$VER/lolMiner_v${VER}_Lin64.tar.gz"
 
 if [ -d "$VER" ]; then
