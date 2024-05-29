@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Configured Pools:"
-echo "1) icemining"
-echo "2) ton ninja"
+echo "1. icemining"
+echo "2. ton ninja"
 read -p "Select Pool number: " poolnum
 
 case $poolnum in
