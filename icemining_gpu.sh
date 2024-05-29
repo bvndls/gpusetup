@@ -1,9 +1,7 @@
 #!/bin/bash
-
 read -p "Assign a name for this worker:" WORKER
 echo "The name assigned to the worker is:" $WORKER
 
-apt install nano -y && \
 wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.88/lolMiner_v1.88_Lin64.tar.gz && \
 tar -xvf lolMiner_v1.88_Lin64.tar.gz && \
 cd 1.88 && \
