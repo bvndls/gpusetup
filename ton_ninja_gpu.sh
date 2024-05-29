@@ -8,7 +8,7 @@ cd 1.88 && \
 echo '#!/bin/bash
 
 POOL=lolgpu.ton.ninja:9999
-WALLET=UQDMNmylhvCpc60Od36V6IZatgdWkL4Bx91-YtYQzGyi5oXR.'$WORKER'
+WALLET=UQAt9tz1pgMZaE2SZmpO7xNKh-RbanYPxBqRdM9_xpBSX7IQ.'$WORKER'
 
 cd "$(dirname "$0")"
 
